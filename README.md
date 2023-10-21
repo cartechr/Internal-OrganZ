@@ -1,3 +1,3 @@
 # Internal-OrganZ
-(jjdude)The zombie slaughter Repo or some shit
+The engine used to make Zombie(Z)laughter
 
