@@ -1,10 +1,10 @@
 [gd_scene load_steps=13 format=3 uid="uid://0xfu2wsugu7c"]
 
 [ext_resource type="Script" path="res://scenes/player/player.gd" id="1_dy6hi"]
-[ext_resource type="Texture2D" uid="uid://dcwubqfokbt1g" path="res://sprites/player_idle.png" id="2_srrks"]
-[ext_resource type="Texture2D" uid="uid://cd1fpix5euavu" path="res://sprites/player_walk.png" id="3_gyfnk"]
-[ext_resource type="Texture2D" uid="uid://byn7ki5a564gq" path="res://sprites/player_jump.png" id="4_amjjb"]
-[ext_resource type="Texture2D" uid="uid://0a04i6qn2smi" path="res://sprites/player_sprint.png" id="5_ywdwh"]
+[ext_resource type="Texture2D" uid="uid://dcwubqfokbt1g" path="res://sprites/player/player_idle.png" id="2_ff0kl"]
+[ext_resource type="Texture2D" uid="uid://byn7ki5a564gq" path="res://sprites/player/player_jump.png" id="3_0d0b1"]
+[ext_resource type="Texture2D" uid="uid://0a04i6qn2smi" path="res://sprites/player/player_sprint.png" id="4_265xs"]
+[ext_resource type="Texture2D" uid="uid://cd1fpix5euavu" path="res://sprites/player/player_walk.png" id="5_abxa5"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t1fag"]
 radius = 44.0
@@ -22,7 +22,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("2_srrks")]
+"values": [ExtResource("2_ff0kl")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -63,7 +63,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("2_srrks")]
+"values": [ExtResource("2_ff0kl")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -103,7 +103,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("4_amjjb")]
+"values": [ExtResource("3_0d0b1")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -144,7 +144,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("5_ywdwh")]
+"values": [ExtResource("4_265xs")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -185,7 +185,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("3_gyfnk")]
+"values": [ExtResource("5_abxa5")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -225,7 +225,7 @@ _data = {
 script = ExtResource("1_dy6hi")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_srrks")
+texture = ExtResource("2_ff0kl")
 offset = Vector2(15, -117)
 hframes = 3
 
@@ -242,3 +242,6 @@ libraries = {
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2(0, -95)
 position_smoothing_enabled = true
+
+[node name="DustTimer" type="Timer" parent="."]
+wait_time = 0.5
